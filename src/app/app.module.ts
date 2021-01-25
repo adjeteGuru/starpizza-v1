@@ -9,6 +9,8 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeService } from './recipes/recipe.service';
 import { HeaderComponent } from './header/header.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,7 +24,10 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule, //attribubes
+    ReactiveFormsModule, //reactives
+    AppRoutingModule
   ],
   providers: [RecipeService],
   bootstrap: [AppComponent]
