@@ -1,19 +1,21 @@
-import { Menu } from "../shared/menu.model";
+import { Order } from "../shared/order.model";
 
 export class Recipe {
     public name: string;
+    public price: number;
     public description: string;
     public imagePath: string;
-    public menus: Menu[];
+    public orders: Order[];
 
     /**
      *
      */
-    constructor(name: string, description: string, imagePath: string, menus: Menu[]) {
+    constructor(name: string, price: number, description: string, imagePath: string, orders: Order[]) {
         this.name = name;
+        this.price = price;
         this.description = description;
         this.imagePath = imagePath;
-        this.menus = menus;
+        this.orders = orders;
         
     }
 }
