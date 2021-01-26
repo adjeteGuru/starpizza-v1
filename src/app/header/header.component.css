@@ -53,8 +53,7 @@ body{
        font-size: 13px;
        color: black;
    }
-   .social-icon p a i:hover{
-       /* background: #f8aa02; */
+   .social-icon p a i:hover{      
        background: #eb6464;
        background-color: #eb6464;
    }

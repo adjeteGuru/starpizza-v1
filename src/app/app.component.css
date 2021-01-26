@@ -3,7 +3,7 @@
     display: table;
     width: 100%;
     height: 100vh;
-    background: url(./images/pizza.jpg) top center;
+    background: url(/assets/images/pizza.jpg) top center;
     background-size: cover;
 }
 
@@ -68,14 +68,14 @@
 }
 
 #pizza .btn-get-started{
-    background: rgb(255, 180, 4);
-    border: 2px solid rgb(255, 38, 0);
-    color: white;
+    background: #ffb404;
+    border: 2px solid #ff2600;
+    color: #ffffff;
 }
 
 #pizza .btn-get-started :hover{
     background: none;
-    border: 2px;
+    border: 2px solid white;
     color: white;
     text-decoration: none;
     font-style: italic;
@@ -96,7 +96,8 @@
 
 .variety .card-img{
     width: cal(100% + 60px);
-    margin-left: -30px;
+    /* margin-left:-30px; */
+    margin-left:0px;
     overflow: hidden;
     z-index: 9;
     border-radius: 0;
@@ -107,15 +108,15 @@
     transition: all 0.3s ease-in-out;
 }
 
-.variety .card-body{
-    z-index: 10;
-    background: #fad5d5;;
-    border-top: 4px solid #fad5d5;;
-    padding: 30px;
-    box-shadow: 0px 2px 15px rgba(248, 241, 173, 0.5);
+/* .variety .card-body{
+    z-index: 10;    
+    background: #ff9b04a6;
+    border-top: 4px solid #f08902;
+    padding: 30px;   
+    box-shadow: 0px 2px 15px rgba(241, 159, 5, 0.5);
     margin-top: -60px;
     transition: 0.3s;
-}
+} */
 
 .variety .card-title{
     font-weight: bold;
@@ -124,13 +125,12 @@
 }
 
 .variety .card-title a{
-    color: black;
+    color: #000000;
     transition: 0.3s;
 }
 
 .variety .card-text{
-    color: black;
-    text-transform: uppercase;
+    color: black;    
 }
 
 .variety .read-more a{
@@ -142,6 +142,7 @@
 }
 
 .variety .read-more a:hover{
+    /* color: #ff0000; */
     color: #ff0000;
 }
 
@@ -155,4 +156,130 @@ border-color: gold;
 
 .variety .card:hover .card-body .card-title a{
     color: #ff0000;
+}
+
+/*======== Product section======= */
+.bg-img{
+    /* background: black; */
+    background: rgb(248, 240, 240);
+}
+
+.text-color{
+    color: #fa930b;
+}
+.product-section h2{
+    font-size: 40px;
+    font-style: italic;
+}
+.product{
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.product .img{
+   display: block;
+   border-radius: 4px;
+   height: 350px;
+   position: all 0.3s ease;
+   z-index: 0; 
+}
+
+.product .img:after{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: rgb(253, 73, 73);
+    opacity: 0;
+    border-radius: 4px;
+    transition: all 0.6s ease;
+}
+
+.product .img .icons .icon-block a{
+   margin: 0 2px;
+   width: 60px;
+   height: 60px;
+   border: 1px solid gray; 
+}
+
+.product .img .icons .icon-block a i{
+    color: white;
+}
+
+.product .text{
+    padding: 20px;
+    position: relative;
+}
+
+.product .text .out, .product .text .day,
+.product .text .week{
+    position: absolute;
+    top: 0;
+    left: 4px;  
+    font-size: 12px;
+    padding: 0 10px;
+    color: white;
+}
+
+.product .text .out{
+    background: rgb(255, 21, 0);
+}
+
+.product .text .day{
+    background: rgb(241, 154, 14);
+}
+
+.product .text .week{
+    background: rgb(0, 128, 90);
+}
+
+.product .text h2{
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 300px;
+}
+
+.product .text .category{
+    font-style: italic;
+    color: rgb(17, 3, 77);
+}
+
+.product .text .price{
+    font-style: italic;
+    color: black;
+}
+
+.product:hover .img:after{
+    opacity: .7;
+}
+
+.product:hover .img .icons{
+    opacity: 1;
+}
+
+.glow{
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0,0,0,0); 
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+}
+.glow:hover, .glow:focus, .glow:active{
+    box-shadow:  1px 1px 8px rgb(235, 90, 6);
+}
+
+.btn-prod{
+    display: inline-block;
+    vertical-align: middle;
+    color: #f74904 !important;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(235, 90, 6);
+    position: relative;
+    overflow:hidden;
 }
