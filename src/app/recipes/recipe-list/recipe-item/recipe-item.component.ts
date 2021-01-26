@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Recipe } from '../../recipe.model';
 
 @Component({
   selector: 'app-recipe-item',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
-
-  constructor() { }
+//Here is where we can now use the recipe model created
+@Input() recipe: Recipe;
+  
+//we need to pass index id property to the recipe list html item looped through
+@Input() index: number;
 
   ngOnInit(): void {
   }
