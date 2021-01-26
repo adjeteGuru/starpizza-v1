@@ -141,8 +141,7 @@
     transition: 0.3s;
 }
 
-.variety .read-more a:hover{
-    /* color: #ff0000; */
+.variety .read-more a:hover{  
     color: #ff0000;
 }
 
@@ -282,4 +281,22 @@ border-color: gold;
     box-shadow: 0 0 1px rgb(235, 90, 6);
     position: relative;
     overflow:hidden;
+}
+
+.btn-prod:before{
+content: '';
+position: absolute;
+z-index: -1;
+left: 51%;
+right: 51%;
+top:0;
+background: rgb(243, 139, 4);
+height: 4px;
+transition-property: left, right;
+transition-duration: 0.3s;
+transition-timing-function: ease-out;
+}
+.btn-prod:hover:before, .btn-prod:focus:before, .btn-prod:active:before{
+    left: 0;
+    right: 0;
 }
