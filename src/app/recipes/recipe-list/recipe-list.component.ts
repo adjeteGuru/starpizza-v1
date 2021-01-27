@@ -8,6 +8,7 @@ import { RecipeService } from '../recipe.service';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
+ //coming from the model, this is a recipes of type array of recipe but empty 
   recipes: Recipe[] = [];
 
   constructor(private recipeService: RecipeService) { }

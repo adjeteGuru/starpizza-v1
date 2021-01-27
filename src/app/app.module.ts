@@ -11,6 +11,13 @@ import { RecipeService } from './recipes/recipe.service';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { CategoryComponent } from './category/category.component';
+import { CategoryListComponent } from './category/category-list/category-list.component';
+import { CategoryItemComponent } from './category/category-list/category-item/category-item.component';
+import { CategoryService } from './category/category.service';
+
 
 
 @NgModule({
@@ -21,7 +28,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RecipeListComponent,
     RecipeEditComponent,
     RecipeDetailComponent,
-    HeaderComponent
+    HeaderComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    CategoryComponent,
+    CategoryListComponent,
+    CategoryItemComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +41,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule, //reactives
     AppRoutingModule
   ],
-  providers: [RecipeService],
+  providers: [RecipeService, CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

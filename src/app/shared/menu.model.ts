@@ -1,4 +1,4 @@
-export class Order{
+export class Menu{
     public name: string;   
     public quantity: number
 
