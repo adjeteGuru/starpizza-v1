@@ -1,11 +1,88 @@
-<!-- <section> -->
-  <!-- display header component  -->
-<app-header></app-header>
-<!-- </section> -->
+ <!--Start Header -->
+<section id="cover"> 
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-6 d-flex align-items-center'>
+          <p class="mb-0 phone pl-md-2">
+            <a href="#" class="mr-2">
+              <i class="fas fa-phone mr-1"></i>            
+                         0115 5930 5888
+            </a>
+            <a href="#">
+              <i class="fas fa-paper-plane mr-1"></i>
+              email@email.com
+            </a>
+          </p>
+        </div>
+        <div class='col-md-6 d-flex justify-content-md-end'>
+          <div class='social-icon mr-4'>
+            <p class="md-0 d-flex">
+              <a href="#" class="d-flex align-items-center justify-content-center">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="d-flex align-items-center justify-content-center">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </p>
+          </div>
+          <div class='reg'>
+            <a href="#" class="mr-2 mb-0">Sign-Up</a>
+            <a href="#" class="mr-2 mb-0">Log In</a>
+          </div>
+        </div>
+      </div>      
+    </div>  
+  <!--End Header -->
+   <!--Start NAv-->  
+   <nav class='navbar navbar-expand-lg main-navbar bg-color main-navbar-color' id="main-navbar">  
+     <a class="navbar-brand" style="cursor: pointer;">Star Pizza</a>
+     <div class='order-lg-last btn-group'>
+       <i class='fas fa-shopping-bag fa-2x'></i>
+     </div>
+     <button class="navbar-toggler" type="button" data-collapse="collapse" data-target="#myNav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><i class='fas fa-bars'></i></button>
+     <div class='collapse navbar-collapse' id="myNav">
+       <ul class='navbar-nav ml-auto'>
+        <li class='nav-item'routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" routerLink="/">Home</a>         
+        </li>
+         <li 
+         class='nav-item' 
+         routerLinkActive="active">
+           <a 
+           routerLink="/recipes" 
+           class="nav-link">Recipe</a>
+         </li>
+         <li 
+         class='nav-item'
+         routerLinkActive="active">
+          <a 
+          routerLink="/contact" 
+          class="nav-link">Contact</a>
+        </li>
+        <li 
+        class='nav-item' 
+        routerLinkActive="active">
+          <a 
+          routerLink="/categories" 
+          class="nav-link">Category</a>
+        </li>
+        <li 
+        class='nav-item'
+        routerLinkActive="active">
+          <a
+          [routerLink]="['/orders']" 
+          class="nav-link">Order Now</a>
+        </li>        
+       </ul>     
+  </div> 
+  </nav>  
+</section>
+  <!--End of Nav-->
+
 <!--Logo section-->
-<section id="pizza">
-  <div class='pizza-container'>
-    <div class='pizza-logo'>
+<section id="banner">
+  <div class='banner-container'>
+    <div class='banner-logo'>
       <h1 class="font-weight-bold">Take Away</h1>
     </div>
     <h2 class="font-weight-bold">Healthy food, Happy mood!</h2>
@@ -15,21 +92,13 @@
   </div>
 </section>
 <!--Variety Section-->
-<!-- display here app-recipes  -->
-<!-- <app-recipes></app-recipes> -->
-<!-- display here app-shopping-list  -->
-<!-- <app-shopping-list></app-shopping-list> -->
 
-<!--Section to display Content/ Categories img-->
-<app-recipes></app-recipes>
-<!-- 
 <section id="variety" class="variety pt-4">
   <div class='container'>
     <div class='section-title'>
       <h2 class="text-center font-weight-bold">Categories</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, molestias. Perspiciatis dignissimos earum similique laudantium veritatis beatae error. Quam perferendis ut officia mollitia magnam eaque quaerat recusandae dolorum magni optio.</p>
     </div>
-
    
     <div class='row'>
       <div class='col-md-6 d-flex align-items-stretch'>
@@ -118,22 +187,21 @@
             </div>
           </div>
         </div> 
-       </div>
-      
-    </div>   
-
+       </div>      
+    </div>  
   </div>
-</section> -->
+</section> 
 <!--END Section to display Content/ Categories img-->
  <!--Product section--->
+
  <section class='product-section bg-img py-3'>
    <div class='container'>
      <div class='row justify-content-center pb-5'>
        <div class='col-md-7 heading-section text-center'>
-         <h2 class="font-weight-bold text-color glow">Take Away</h2>
+         <h2 class="font-weight-bold text-color glow">View Best Deal</h2>
        </div>
      </div>
-      <!--end title--->
+      
       <div class='row'>
         <div class='col-md-3 d-flex'>
           <div class='product glow'>
@@ -160,7 +228,7 @@
             </div>
           </div>
         </div>
-        <!---->
+        
         <div class='col-md-3 d-flex'>
           <div class='product glow'>
             <div class='img d-flex align-items-center justify-content-center' style="background-image: url(assets/images/pizample.jpg);">
@@ -186,7 +254,7 @@
             </div>
           </div>
         </div>
-        <!---->
+    
         <div class='col-md-3 d-flex'>
           <div class='product glow'>
             <div class='img d-flex align-items-center justify-content-center' style="background-image: url(assets/images/steak.jpg);">
@@ -212,7 +280,7 @@
             </div>
           </div>
         </div>
-        <!---->
+     
         <div class='col-md-3 d-flex'>
           <div class='product glow'>
             <div class='img d-flex align-items-center justify-content-center' style="background-image: url(assets/images/pizample.jpg);">
@@ -237,7 +305,7 @@
             </div>
           </div>
         </div>
-        <!---->
+       
         <div class='col-md-3 d-flex'>
           <div class='product glow'>
             <div class='img d-flex align-items-center justify-content-center' style="background-image: url(assets/images/pizample.jpg);">
@@ -262,7 +330,7 @@
             </div>
           </div>
         </div>
-        <!---->
+        
         <div class='col-md-3 d-flex'>
           <div class='product glow'>
             <div class='img d-flex align-items-center justify-content-center' style="background-image: url(assets/images/steak.jpg);">
@@ -287,7 +355,7 @@
             </div>
           </div>
         </div>
-        <!---->
+      
         <div class='col-md-3 d-flex'>
           <div class='product glow'>
             <div class='img d-flex align-items-center justify-content-center' style="background-image: url(assets/images/pizample.jpg);">
@@ -312,7 +380,7 @@
             </div>
           </div>
         </div>
-        <!---->
+      
         <div class='col-md-3 d-flex'>
           <div class='product glow'>
             <div class='img d-flex align-items-center justify-content-center' style="background-image: url(assets/images/steak.jpg);">
@@ -337,15 +405,14 @@
             </div>
           </div>
         </div>
-        <!---->
+       
       </div>
       <div class='row justify-content-center'>
         <div class='col-md-4'>
           <a href="#" class="btn btn-prod d-block">
             View All Products
             <i class="fas fa-carrot"></i>
-          </a>
-       
+          </a>       
         </div>
       </div>
    </div>

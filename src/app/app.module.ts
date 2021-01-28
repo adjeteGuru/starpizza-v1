@@ -17,6 +17,13 @@ import { CategoryComponent } from './category/category.component';
 import { CategoryListComponent } from './category/category-list/category-list.component';
 import { CategoryItemComponent } from './category/category-list/category-item/category-item.component';
 import { CategoryService } from './category/category.service';
+import { CategoryStartComponent } from './category/category-start/category-start.component';
+import { CategoryEditComponent } from './category/category-edit/category-edit.component';
+import { CategoryDetailComponent } from './category/category-detail/category-detail.component';
+import { HomeComponent } from './home/home.component';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { ContactComponent } from './contact/contact.component';
+import { OrdersComponent } from './orders/orders.component';
 
 
 
@@ -33,7 +40,14 @@ import { CategoryService } from './category/category.service';
     ShoppingEditComponent,
     CategoryComponent,
     CategoryListComponent,
-    CategoryItemComponent
+    CategoryItemComponent,
+    CategoryStartComponent,
+    CategoryEditComponent,
+    CategoryDetailComponent,
+    HomeComponent,
+    RecipeStartComponent,
+    ContactComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,

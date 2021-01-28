@@ -13,45 +13,45 @@ export class CategoryService {
     //
     private categories: Category[] = [        
 
-        new Category(
-            'KEBAB', 
-            [new Recipe(
-                'Small Chicken Kebab',
-                5, 
-                'sample data kebab',
-                'pic.jpg' ),
+        // new Category(
+        //     'KEBAB', 
+        //     [new Recipe(
+        //         'Small Chicken Kebab',
+        //         5, 
+        //         'sample data kebab',
+        //         'pic.jpg' ),
 
-             new Recipe(
-                'Big chicken Kebab',
-                8,
-                'sample of big kebab',
-                'pic.jpg')
+        //      new Recipe(
+        //         'Big chicken Kebab',
+        //         8,
+        //         'sample of big kebab',
+        //         'pic.jpg')
                                                
-            ],
-        ),
+        //     ],
+        // ),
 
-        new Category(
-            'PIZZA',
-            [new Recipe(
-                'Mageritta',
-                12,
-                'sample of data pizza',
-                'pic.jpg'),
+        // new Category(
+        //     'PIZZA',
+        //     [new Recipe(
+        //         'Mageritta',
+        //         12,
+        //         'sample of data pizza',
+        //         'pic.jpg'),
                 
                 
-            new Recipe(
-                'Peperroni',
-                12,
-                'sample of data pizza',
-                'pic.jpg'),
+        //     new Recipe(
+        //         'Peperroni',
+        //         12,
+        //         'sample of data pizza',
+        //         'pic.jpg'),
 
-            new Recipe(
-                'Vegetarian',
-                12,
-                'sample of data pizza',
-                'pic.jpg'),    
-            ]
-        )
+        //     new Recipe(
+        //         'Vegetarian',
+        //         12,
+        //         'sample of data pizza',
+        //         'pic.jpg'),    
+        //     ]
+        // )
     ]
    
      //

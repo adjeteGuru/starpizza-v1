@@ -1,5 +1,98 @@
- /*======== Pizza======= */
- #pizza{
+ 
+body{
+    font-family: 'lato', sans-serif;   
+   }
+
+   h1{
+       color: red;
+   }
+ 
+
+    #cover{
+        position: relative;
+        z-index: 0;
+        width: 100%;      
+        background:#eb6464;
+        }
+   
+   .phone{
+       z-index: 1;
+       font-weight: 200;    
+   }
+   
+   .phone i{
+       color:  black;
+   }
+   .phone a{
+       color: black;
+       font-size: 13px;
+       font-weight: bold;
+   }
+   
+   .reg{
+       width: 50%;
+       text-align: right;      
+   }
+   .reg a{
+       color: black;
+       text-transform: uppercase;
+       font-size: 13px;
+       font-weight: bold;
+   }
+   .social-icon{
+       display: inline-block;
+       width: 50%;
+   }
+   .social-icon p{
+       display: block;
+       width: 100%;
+   }
+   
+   .social-icon p a{
+       height:30px;
+       margin-right: 10px;
+   }
+   
+   .social-icon p a i{
+       font-size: 13px;
+       color: black;
+   }
+
+   .social-icon p a:hover{      
+       background: #eb6464;
+       border-color: #eb6464;
+   }
+   
+   .social-icon p a:hover i{
+       background: white;
+   }
+   
+   /*======== NavBar======= */
+   .bg-color{
+       background:#fad5d5;
+   }
+   
+   .navbar-brand{
+       color: #eb6464;
+       font-weight: bold;
+       font-size: 35px!important;
+   }
+   .nav-link{
+       font-weight: bold;
+       color: #eb6464;
+       font-size: 20px;
+   }
+   .btn-group{
+       color: #eb6464;
+   }
+   .navbar-toggler i{
+       color: #eb6464;
+   }
+   
+  
+
+ /*======== Banner======= */
+ #banner{
     display: table;
     width: 100%;
     height: 100vh;
@@ -8,17 +101,17 @@
 }
 
 @media(min-width:1024px){
-    #pizza{
+    #banner{
         background-attachment: fixed;
     }
 }
 
-#pizza .pizza-logo{
+#banner .banner-logo{
     margin: 20px;
     max-width: 100%;
 }
 
-#pizza .pizza-container{
+#banner .banner-container{
     background: rgba(0, 0, 0, 0.2);
     display: table-cell;
     margin: 0;
@@ -26,7 +119,7 @@
     text-align: center;
     vertical-align: middle;
 }
-#pizza h1{
+#banner h1{
     margin: 30px 0 10px 0;
     font-weight: bold;
     line-height: 48px;
@@ -35,27 +128,27 @@
 }
 
 @media(max-width:768px){    
-    #pizza h1{
+    #banner h1{
         font-size: 28px;
         line-height: 36px;
     }
 }
 
-#pizza h2{
+#banner h2{
     margin-bottom: 50px;
     font-style: italic;    
     color: #eb6464;
 }
 
 @media(max-width:768px){
-    #pizza h2{
+    #banner h2{
         font-size: 24px;
         line-height: 26px;    
         margin-bottom: 30px;
     }
 }
 
-#pizza .actions a{
+#banner .actions a{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
@@ -67,13 +160,13 @@
     margin: 10px;
 }
 
-#pizza .btn-get-started{
+#banner .btn-get-started{
     background: #ffb404;
     border: 2px solid #ff2600;
     color: #ffffff;
 }
 
-#pizza .btn-get-started :hover{
+#banner .btn-get-started :hover{
     background: none;
     border: 2px solid white;
     color: white;
