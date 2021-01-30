@@ -17,7 +17,11 @@ import { ShoppingListComponent } from "./shopping-list/shopping-list.component";
 const appRoutes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
      //only redirect if pathMatch is emplty
-     {path: 'home', component: HomeComponent},
+     {path: 'home', component: HomeComponent, children: [
+         {path: '', component: HomeComponent}
+     ]},
+
+
     {path: 'recipes', component: RecipesComponent, children: [
         {path: '', component: RecipeStartComponent},
         {path: 'new', component: RecipeEditComponent},
@@ -42,6 +46,5 @@ const appRoutes: Routes = [
     exports:[RouterModule]
 })
 export class AppRoutingModule {
-
 
 }

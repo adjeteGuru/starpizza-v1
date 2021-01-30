@@ -24,6 +24,10 @@ import { HomeComponent } from './home/home.component';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { ContactComponent } from './contact/contact.component';
 import { OrdersComponent } from './orders/orders.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { FooterContentComponent } from './footer-content/footer-content.component';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 
 
@@ -44,10 +48,13 @@ import { OrdersComponent } from './orders/orders.component';
     CategoryStartComponent,
     CategoryEditComponent,
     CategoryDetailComponent,
+    DropdownDirective,
     HomeComponent,
     RecipeStartComponent,
     ContactComponent,
-    OrdersComponent
+    OrdersComponent,
+    MainContentComponent,
+    FooterContentComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +62,7 @@ import { OrdersComponent } from './orders/orders.component';
     ReactiveFormsModule, //reactives
     AppRoutingModule
   ],
-  providers: [RecipeService, CategoryService],
+  providers: [RecipeService, CategoryService, ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
